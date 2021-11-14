@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:springgreen;
+            text-align: center;
+            background-image: url("https://images.unsplash.com/photo-1595769816263-9b910be24d5f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fG1vdmllc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
+        }
+        h1{
+            /* text-align: center; */
+            color: tomato;
+            background-color: thistle;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+       
+        input{
+            /* display: block; */
+            border-radius: 5px;
+            height: 30px;
+            width: 130px;
+            /* margin-bottom: 0px; */
+            margin: 0px;
+            padding: 0px;
+        }
+        button{
+            /* width: 20%; */
+            border: sienna;
+            background-color:peru;
+            color:red;
+            font-size: larger;
+            margin-left: 25px;
+            text-align: center;
+            border-radius: 3px;
+            width: 130px;
+            height: 30px;
+            margin-bottom: 0px;
+        }
+        #container{
+            /* display: grid;
+            grid-template-columns: 25% 25% 25% 25%; */
+            /* grid-gap:px;  */
+            margin: 0px auto;
+
+            /* background-color:pink; */
+            /* border: 1px solid red; */
+            display: flex;
+            
+        }
+        img{
+            width: 80%;
+            height: 210px;
+            /* margin-top: 15px; */
+        }
+        #gif{
+            margin-top: 15px;
+            width: 50%;
+            height: 200px;
+        }
+        .main{
+            /* background-color: aquamarine; */
+            border-radius: 25px;
+            /* margin: 60px; */
+            width: 500px;
+            margin-left: 200px;
+            margin-top: 0px;
+            
+            font-size: larger;
+            font-weight: bolder;
+            /* border: 1px solid green; */
+           
+            color:black;
+
+        }
+        .main2{
+            background-color: rgb(148,148,148);
+            height: 210px;
+            margin-top: 15px;
+            margin-left: 35px;
+        }
+        button:hover{
+            background-color:chocolate;
+            border:3px solid firebrick;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        h3{
+            color: yellow;
+            /* margin-left: 700px; */
+        }
+    </style>
+</head>
+<body>
+    <h1> <marquee  direction="right">Movie Mania</marquee></h1>
+    <b style="color: chartreuse;"> Enter Movie Name:</b> <input type="text" id="movie">
+    <button onclick="getMovie()">Movie</button>
+    <div id="container"></div>
+</body>
+</html>
+<script src="movie3.js"></script>
